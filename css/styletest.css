@@ -1,0 +1,380 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 15px;
+ }
+ .carousel-inner .banner{
+     width: 100%;
+     height: 400px;
+ }
+ .menu_top ul{
+     list-style-type: none;
+     background-color: cadetblue;
+     text-align: center;
+ }
+ .menu_top ul li{
+     color: black;
+     display: inline-table;
+     width: 140px;
+     max-height: 42px;
+     line-height: 42px;
+ }
+ .menu_top ul li a{
+     text-decoration: none;
+     color: white;
+     display: block;
+     font-weight: bold;
+     padding: 0px 5px;
+ }
+
+ .menu_top ul li a:hover{
+     background-color: white;
+     color:black;
+ }
+ .menu_top ul li .dropdown-item{
+    color: black;
+ }
+.menu_top ul li .dropdown-item:hover{
+    background: #CDE2CD;
+}
+ .btn-info{
+     background: cadetblue;
+     border: none;
+     height: 40px;
+ }
+ .menu_search input[type=search]{
+     width: 200px;
+     border: 1px solid black;
+     border-radius: 5px;
+     outline:none;
+     padding: 12px 14px;
+     transition: 0.6s ease-in-out;
+     margin-left: 10px;
+ }
+ .menu_search input[type=search]:focus{
+    width: 500px;
+    background-color:darkgrey;
+    border-color: darkgreen;
+    box-shadow: 0px 0px 5px cadetblue;
+ }
+ .content{
+     display: flex;
+     margin-top: 10px;
+ }
+ .title-menu img{
+     width: 30px;
+     height: 30px;
+ }
+ .title-menu{
+     background: peru;
+     width: 250px;
+     height: 50px;
+     padding: 0;
+ }
+ .title-menu h5{
+    line-height: 50px;
+}
+ .menu_left{ 
+     flex: 1;
+     z-index: 999;
+ }
+ .menu_left ul{
+     background:cadetblue;
+     width: 250px;
+     list-style-type: none;
+     padding: 0;
+ }
+ .menu_left ul li{
+     width: auto;
+     height: 40px;
+     line-height: 40px;
+     border-bottom: 1px solid #e8e8e8;
+     padding: 0 1em;
+     position: relative;
+}
+.menu_left ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+}
+.menu_left ul li:hover{
+    background: #CDE2CD;
+}
+/* .menu_left .sub-menu{
+    position: absolute;
+    left: 250px;
+    top: 0;
+    display: none;
+}
+.menu_left ul li:hover .sub-menu{
+    display: block;
+} */
+ .content-product{
+     flex: 5;
+ }
+ .main{
+     background-color:white;
+     padding: 10px;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     grid-gap: 20px;
+ }
+ .info{
+     background-color:white;
+     text-align: center;
+     margin-top: 20px;
+     border: 1px solid black;
+     box-shadow: 10px 10px 10px grey;
+     width: 300px;
+     height: auto;  
+ }
+ .info img{
+    width: 180px;
+    height: 180px;
+    margin-bottom: 15px;
+ }
+ .btn-product{
+     margin-bottom: 10px;
+ }
+ .btn-product .btn-primary{
+    margin-right: 5px;
+}
+.btn-product .btn-danger{
+    margin-left: 5px;
+}
+.pagination{
+    padding: 20px;
+    margin-left: 450px;
+}
+.pagination a{
+    margin-left: 10px;
+    font-weight: bold;
+}
+ .footer{
+     background-color: black;
+ }
+.footer .tb-footer{
+    margin: 0 auto;
+    color: #e5e5e5;
+}
+.footer .tb-footer td{
+    padding: 10px;
+}
+ #rs_search{
+     margin: 0px 0px 0px 20px;
+     font-weight: bold;
+ }
+ .background-img{
+     background-image: url('https://hinhanhdephd.com/wp-content/uploads/2017/06/hinh-nen-dep-cho-dien-dien-thoai-nam-2018-.jpg');
+     background-size: 100%;
+ }
+ .main-container{
+     margin: auto;
+     width: 30%;
+ }
+ .register{
+     margin-top: 50px;
+ }
+ .login{
+     margin-top: 150px;
+ }
+  .logout-button{
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.5);
+  }
+  .logout-button:hover{
+      color:rgb(240, 229, 231);
+      text-decoration: none;
+  }
+  /* style cart */
+  .actions img{
+    width: 30px;
+    height: 30px;
+  }
+  .product-information{
+    display: flex;
+  }
+  .product-information hr{
+      border-top: solid 1px #c7c7c7;
+      padding-bottom: 10px;
+      margin: 5px 0 10px;
+  }
+  .image-details {
+      border: solid 1px #e5e5e5;
+      margin: 0 0 50px 30px ;
+      width: 360px;
+      height: 360px;
+      overflow: hidden;
+  }
+  .image-details img{
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.5s;
+    
+  }
+  .image-details img:hover{
+      transform: scale(0.5,0.5);
+      cursor: pointer;
+  }
+  .details{
+      padding: 20px;
+      margin: 0 0 50px 20px;
+      width: 450px;
+  }
+  .btn-addcart, .btn-buynow{
+    width: 100%;
+    background:#ef4d4d;
+    color: white;
+    padding: 12px 20px;
+	font-weight: bold;
+    letter-spacing:1px;
+    cursor: pointer;
+	transition: 0.5s ease-in;
+  }
+  
+  .btn-product a, .btn-cart a{
+    text-decoration: none;
+    color: white;
+  }
+  .btn-addcart:hover, .btn-buynow:hover{
+      background: white;
+      color: red;
+      border: solid 1px red;
+  }
+  .product-title h2{
+      font-weight: bold;
+      margin-bottom: 20px;
+  }
+  .product-price{
+      font-weight: bold;
+      color: red;
+  }
+  .description h5{
+      font-weight: bold;
+  }
+  .notification h3{
+    color: rgba(0,0,0,.4);
+  }
+  .cart-empty{
+    margin: 0 auto;
+  }
+ .btn-cart{
+    margin: 50px 0 0 100px;
+  }
+
+  .btn-showfeedback{
+    display: flex;
+    justify-content: center;
+}
+  .feedback .btn{
+    
+    bottom: 30px;
+    right: 30px;
+    position: fixed;
+    line-height: 35px;
+    border: solid 1px rgb(218, 218, 218);
+    background: lightseagreen;
+    border-radius: 10px;
+    color: white;
+}
+.feedback .btn:hover{
+    
+    
+    background: white;
+  
+    color: lightseagreen;
+}
+.feedback img{
+    width: 30px;
+    height: 30px;
+
+}
+.sp{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn-feedb{
+    background: #dc3545;
+    color: white;
+    margin-right: 135px;
+    width: 62.85px;
+    height: 35.65px;
+    border-radius: .25rem;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    border-color: #dc3545;
+    font-weight: 400px;
+}
+.modal-header{
+    background: rgb(50, 205, 128);
+}
+.modal-title{
+    color: white;
+    font-weight: bold;
+}
+
+.img-qladmin{
+    width: 150px;
+    height: 150px;
+}
+.alert-danger{
+    width: 50%;
+    margin-top: 10px;
+}
+.alert-success{
+    width: 15%;
+    margin-top: 10px;
+}
+.panel-body .alert-danger{
+    width: auto;
+}
+.toast-message{
+    position: absolute;
+    top: 60em;
+    left: 1em;
+}
+
+#myBtn {
+    position: fixed;
+    bottom: 7em;
+    right: 30px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: #e9ecef;
+    color: #adb5bd;
+    cursor: pointer;
+    padding: 13px 20px;
+    border-radius: 10%;
+    transition: all .4s;
+  }
+
+#myBtn:hover {
+    background-color: rgb(8, 143, 153);
+  }
+.imagePost {
+    width: 7rem;
+    height: 7rem;
+}
+
+.file-attachment-btn-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    cursor: inherit;
+    opacity: 0;
+}
+.file-attachment-btn {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+}
